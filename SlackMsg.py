@@ -14,14 +14,14 @@ import json
 # channel = '#automateslack'
 # message = "How are you"
 
-slack_token = 'xoxb-1363198843266-1386254372261-TjSF4PKGiv4GYcNaHIrAh0KV'
+slack_token = 'Slack_token'
 sc = WebClient(slack_token)
 
 # result = sc.api_call("chat.postMessage", channel=channel, text=message)
 
 result = sc.api_call(
   api_method='chat.postMessage',
-  json={'channel': '#automateslack', 'text': 'Hello world!'}
+  json={'channel': 'channel', 'text': 'Hello world!'}
 )
 
 # print result
